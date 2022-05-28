@@ -1,0 +1,64 @@
+h1 {
+	margin: 1rem;
+	text-align: center;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: 'MS Shell Dlg 2';
+}
+
+button {
+	margin:  1rem;
+}
+
+p {
+	margin:  0;
+}
+
+.flexRow {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.flexColumn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height:  100%;
+}
+
+.button-primary{
+	transition:  background-color 0.2s;
+}
+
+.button-secondary{
+	transition:  all 0.2s;
+	transition-property: border, color;
+}
+
+.button-primary.disabled, .button-primary.disabled:hover, .button-primary.disabled:focus {
+	background-color: rgb(188, 232, 246);
+	border: none;
+	cursor: default;
+}
+
+#loadingContainer {
+	opacity:  0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width:  100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+#jokeContainer {
+	position:  relative;
+	text-align: center;
+	height: 10rem;
+}
